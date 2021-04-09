@@ -1,0 +1,44 @@
+<DOCTYPE html>
+	<html>
+	<head>
+		<title>Show Password JQuery</title>
+		<script type="text/javascript" src="JQuery.js"></script>
+	</head>
+	<body>
+
+<h1>Form Login</h1>
+<br><br>
+
+		<form>
+			<label>Username</label>
+			<br><br>
+			<input type="text" name="">
+
+			<br><br>
+
+			<label>Password</label>
+			<br><br>
+			<input type="Password" name="" class="Show">
+
+			<br>
+
+			<input type="checkbox" name="" class="Cbox">Show Password
+
+			<button>LOGIN</button>
+		</form>
+
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('.Cbox').click(function(){
+					if ($(this).is(':checked')) {
+						$('.Show').attr('type','text');
+					}else{
+						$('.Show').attr('type','Password');
+					}
+				})
+			})
+			
+		</script>
+
+	</body>
+	</html>
